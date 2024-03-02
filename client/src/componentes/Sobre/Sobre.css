@@ -1,0 +1,41 @@
+.sobre-seccion {
+    grid-column: 2;
+    grid-row: 2;
+    width: 60%;
+    margin: 10vw auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.sobre-contenedor {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    gap: 10px;
+}
+
+.sobre-imagen-primera {
+    height: 500px;
+    width: 450px;
+}
+
+.sobre-imagen-segunda {
+    height: 500px;
+    width: 450px;
+}
+
+.sobre-titulo {
+    font-size: 1.8rem;
+}
+
+.sobre-parrafo {
+    color: gray;
+    line-height: 30px;
+}
+
+.sobre-span {
+    color: gray;
+    font-style: italic;
+    margin-top: -60px;
+}

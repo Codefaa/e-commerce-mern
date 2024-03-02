@@ -1,0 +1,106 @@
+.agregar-seccion {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+}
+
+.agregar-contenedor {
+    width: 900px;
+    min-height: 100px;
+    background: #212121;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.agregar-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agregar-separar {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 40px;    
+}
+
+.agregar-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.agregar-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.agregar-input,
+.agregar-textarea,
+.agregar-select {
+    background-color: #413F47;
+    border-radius: 10px;
+    border: 0;
+    padding: .6rem;
+    color: white;
+}
+
+.agregar-boton {
+    border: 0;
+    padding: .8rem;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modificar-boton {
+    border: 0;
+    padding: .8rem;
+    background-color: rgb(42, 50, 165);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cerrar-boton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    color: #1766DC;
+}
+
+.cerrar-boton:hover {
+    background: #f2f2f2;
+}
+
+.bi-x-lg {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
+}

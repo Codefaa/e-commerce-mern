@@ -1,0 +1,70 @@
+.seccion-artefacto {
+    display: flex;
+    flex-direction: column;    
+    gap: 8px;
+}
+
+.enlace-artefacto {
+    text-decoration: none;
+    color: black;
+}
+
+.artefacto-figure {
+    height: 356px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.imagen-artefacto {    
+    height: 356px;
+    transition: all 500ms ease-out;
+}
+
+.artefacto-figure:hover > .imagen-artefacto {
+    transform: scale(1.1);
+}
+
+.titulo-artefacto {
+    letter-spacing: 2.5px;
+    font-size: 1.2rem;
+}
+
+.datos-artefacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos-artefacto {
+    display: flex;
+    gap: 10px;
+}
+
+.bi-trash3-fill,
+.bi-pencil-square {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bi-trash3-fill {
+    color: red;
+    transition: .2s all ease;
+}
+
+.bi-pencil-square {
+    color: blue;
+    transition: .2s all ease;
+}
+
+.bi-trash3-fill:hover {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.bi-pencil-square:hover {
+    color: rgba(0, 0, 255, 0.5);
+}
+
+.precio-artefacto {
+    color: black;
+    font-size: 1.2rem;
+}

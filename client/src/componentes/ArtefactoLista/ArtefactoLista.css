@@ -1,0 +1,49 @@
+.artefacto-seccion {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.artefacto-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.volver-inicio {
+    text-decoration: none;
+    color: black;
+    transition: .2s all ease;
+}
+
+.volver-inicio:hover {
+    color: gray;
+}
+
+.artefacto-cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.artefacto-p-agregar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.artefacto-boton {
+    border: 0;
+    padding: .6rem;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    transition: .2s all ease;
+}
+
+.artefacto-boton:hover {
+    background-color: rgba(165, 42, 42, 0.5);
+}

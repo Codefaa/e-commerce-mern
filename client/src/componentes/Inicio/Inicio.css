@@ -1,0 +1,160 @@
+.inicio-seccion {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio-figure {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 751px;
+}
+
+.inicio-contenedor-figure {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 120px;
+    
+}
+
+.inicio-titulo {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.inicio-parrafo {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.inicio-boton {
+    border: 0;
+    padding: 1rem;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.inicio-boton:hover {
+    background: rgba(255, 255, 255, 0.80);
+
+}
+
+
+/* Carrusel */
+.inicio-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10rem;
+}
+
+.contenedor-carrusel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.carrusel-figure {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.carrusel-imagen {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.carrusel-titulo {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.carrusel-parrafo {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 40px;
+}
+
+.carrusel-imagenes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.bi-chevron-left,
+.bi-chevron-right {
+    font-size: 1.4rem;
+    color: #040404;
+}
+
+.numero-imagen {
+    letter-spacing: 8px;
+}
+
+/* Video */
+.inicio-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 10rem;
+}
+
+.contenedor-video {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.video-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.video-abajo video {
+    width: 100%;
+}
+
+.video-titulo {
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+
+.video-span {
+    font-weight: bold;
+}
+
+
+/* Categoria */
+.contenedor-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.categoria-arriba { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.categoria-titulo {
+    font-weight: 100;
+    font-size: 1.8rem;
+}

@@ -1,0 +1,87 @@
+.navegador-seccion {
+    grid-column: 1;
+    grid-row: 2;
+    
+    background-color: #FAFAFA;
+    height: calc(100vh - 40px);
+    width: 316px;
+    position: fixed;
+    top: 40px;
+    display: flex;
+}
+
+.navegador-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 65%;
+    margin-inline: 40px;
+
+    position: relative;
+}
+
+.bi-bag {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.8rem;
+    position: relative; /* Agregar posición relativa */
+}
+
+.numerito {
+    font-size: .8rem;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute; 
+    top: 9px; 
+    right: 10px; 
+}
+
+.navegador-tituloenlace {
+    text-decoration: none;
+    color: black;
+}
+
+.navegador-titulo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.navegador-nav-arriba {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegador-enlace-arriba {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: .2s all ease;
+}
+
+.navegador-nav-abajo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegador-enlace-abajo {
+    text-decoration: none;
+    color: black;
+    transition: .2s all ease;
+}
+
+
+.navegador-enlace-carrito {
+    text-decoration: none;
+    color:black;
+    transition: .2s all ease;
+}
+
+.navegador-enlace-carrito:hover,
+.navegador-enlace-arriba:hover,
+.navegador-enlace-abajo:hover {
+    color: rgba(0, 0, 0, 0.40);
+}

@@ -1,0 +1,38 @@
+.navegador-buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    transition: .2s all ease;
+}
+
+.navegador-buscador:hover .bi-search{
+    color: black;
+}
+
+.navegador-buscador:hover {
+    border-bottom: 1px solid black;
+}
+
+.navegador-input:focus,
+.navegador-input:hover {
+    color: black;
+}
+
+.navegador-input {
+    border: 0;
+    padding: .8rem;
+    background-color: #FAFAFA;
+    color: gray;
+}
+
+.bi-search {
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.barra-enlace {
+    text-decoration: none;
+    color: black;
+}

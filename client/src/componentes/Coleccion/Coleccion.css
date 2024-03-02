@@ -1,0 +1,84 @@
+.coleccion-seccion {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coleccion-home {
+    color: #3b3b3b;
+}
+
+.coleccion-titulo {
+    font-size: 1.8rem;
+    letter-spacing: 2.5px;
+}
+
+.coleccion-imagenes {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contenedor-coleccion {
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); */
+    height: 500px;
+    width: 100%;
+}
+
+.coleccion-imagen {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contenedor-coleccion:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-coleccion:hover > .coleccion-imagen {
+    transform: scale(1.3);
+}
+
+
+.tititulo-coleccion,
+.tititulo-prueba {
+    padding: 40px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    transition: all 500ms ease-out;
+    user-select: none;
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.tititulo-prueba {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+}
+
+.contenedor-coleccion:hover > .tititulo-prueba {
+    visibility: hidden;
+    opacity: 0;
+}
