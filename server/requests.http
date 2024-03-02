@@ -1,0 +1,16 @@
+###
+POST http://localhost:5005/api/agregar 
+Content-Type: application/json
+
+{
+    "nombre": "Computadora",
+    "imagen": "https://theartifox.com/cdn/shop/products/02-artifox-hook-smoke-hover_320x320_crop_center.jpg?v=1607396634",
+    "color": "negro",
+    "precio": 2500, 
+    "descripcion": "Esto es una computadora gamer",
+    "caracteristicas": "Intel I7 16GB 1TB",
+    "dimensiones": "27p", 
+    "peso": 30,
+    "materiales": "Metal, Acero", 
+    "categoria": "Escritorio"
+}
