@@ -4,10 +4,10 @@ const connectDb = require('./db/mongodb')
 const { appConfig, dbConfig } = require('./config');
 
 
-async function initApp(appConfig, dbConfig) {
+async function initApp(port, dbConfig) {
     try {
         await connectDb(dbConfig);
-        app.listen(appConfig.port, () => console.log(`Servidor levantado http://localhost:${appConfig.port}`))
+        app.listen(port, () => console.log(`Servidor levantado http://localhost:${appConfig.port}`))
     }
     catch(error) {
         console.error(error);
@@ -15,4 +15,6 @@ async function initApp(appConfig, dbConfig) {
     }
 }
 
-initApp(appConfig, dbConfig);
+const port = process.env.PORT || appConfig.port;
+
+initApp(port, dbConfig);

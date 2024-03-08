@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API = 'http://localhost:5005/api'
+const URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+
+const API = `${URL}/api`;
 
 export const leerArtefacto = () => axios.get(`${API}/artefactos`)
 
