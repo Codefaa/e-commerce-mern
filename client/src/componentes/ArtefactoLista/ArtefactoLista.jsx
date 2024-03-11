@@ -9,13 +9,15 @@ function ArtefactoLista() {
     
     const { categoria_artefacto, nombre_artefacto } = useParams();
     const [artefactos, setArtefactos] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [estadoModal, setEstadoModal] = useState(false);
 
     useEffect(() => {
         if (categoria_artefacto) {
             leerCategoriaArtefacto(categoria_artefacto)
                 .then(response => setArtefactos(response.data))
-                .catch(error => console.error(error));
+                .catch(error => console.error(error))
+                .finally(() => setLoading(false));
         } else if (nombre_artefacto) {
             leerNombreArtefacto(nombre_artefacto)
                 .then(response => setArtefactos(response.data))
@@ -63,11 +65,14 @@ function ArtefactoLista() {
                 <button className='artefacto-boton' onClick={() => setEstadoModal(!estadoModal)}>Agregar Nuevo Artefacto <i class="bi bi-person-fill-add"></i></button>
                 <ArtefactoAgregar estadoModal={estadoModal} setEstadoModal={setEstadoModal} setArtefactos={setArtefactos} />
             </div>
-                
+            
+            {loading && <h1 className='load-mensaje'>Cargando productos...</h1>}
+            {!loading && artefactos &&
+
             <section className="artefacto-cartas">
                 <Artefacto artefactos={artefactos} setArtefactos={setArtefactos} />
             </section>
-
+            }
             </div>
         </section>
     )
