@@ -66,8 +66,8 @@
 
 .carrito-comprar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .parrafo-total {
@@ -99,7 +99,7 @@
 
 .carrito-vaciar {
     border: 0;
-    background-color: black;
+    background-color: rgba(255, 0, 0, 0.397);
     color: white;
     padding: 1.3rem;
     cursor: pointer;
@@ -110,7 +110,7 @@
 
 .carrito-vaciar:hover {
     color: black;
-    background-color: rgba(200, 200, 200, 0.466);
+    background-color: rgba(255, 0, 0, 0.719);
 }
 
 .carritovacio-contenedor {
@@ -142,14 +142,18 @@
         font-size: .8rem;
     }
 
-    .parrafo-total,
-    .span-total {
+    .parrafo-total {
         font-size: 1rem;
     }
 
+    .span-total {
+        font-size: .9rem;
+    }
+
     .carrito-boton,
-    .carritovacio-boton {
-        padding: .8rem;
+    .carritovacio-boton,
+    .carrito-vaciar {
+        padding: .6rem;
         width: 160px;
     }
 

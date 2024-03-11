@@ -7,7 +7,7 @@ import { CartContext } from '../../context/CartContext';
 function NavegadorMenu() {
     
     const { cantidadEnCarrito } = useContext(CartContext);
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState(true);
 
     function toggleMenu() {
         setMenu(!menu);

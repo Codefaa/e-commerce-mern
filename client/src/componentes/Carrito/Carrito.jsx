@@ -53,8 +53,9 @@ function Carrito() {
                 <div className='carrito-comprar'>
                     <p className='parrafo-total'>Total: <span className='span-total'>${precioTotal()} USD</span></p>
                     <button className='carrito-boton' onClick={handleComprar}>Confirmar compra</button>
+                    <button className='carrito-vaciar' onClick={handleVaciar}>Vaciar carrito</button>
                 </div>
-                <button className='carrito-vaciar' onClick={handleVaciar}>Vaciar</button>
+
             </div>
 
             : 
