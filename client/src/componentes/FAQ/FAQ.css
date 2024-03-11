@@ -1,6 +1,6 @@
 .faq-seccion {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     width: 60%;
     margin: 10vw auto;
     display: flex;
@@ -43,3 +43,25 @@
     height: 250px;
     margin-bottom: 20px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .faq-seccion {
+        grid-column: 1/3;
+    }
+
+  }
+  
+  @media (max-width: 767px) {
+  
+    .faq-seccion {
+        grid-column: 1/3;
+    }
+  
+    .faq-imagen {
+        width: 250px;
+    }
+
+  }
+  

@@ -1,6 +1,6 @@
 .carrito-seccion {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
 
     display: flex;
     align-items: center;
@@ -119,3 +119,38 @@
     gap: 20px;
     width: 900px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .carrito-seccion {
+        grid-column: 1/3;
+    }
+
+  }
+  
+  @media (max-width: 767px) {
+  
+    .carrito-seccion {
+        grid-column: 1/3;
+    }
+  
+    .carrito-nombre,
+    .carrito-precio,
+    .carrito-preciototal,
+    .span-cantidad {
+        font-size: .8rem;
+    }
+
+    .parrafo-total,
+    .span-total {
+        font-size: 1rem;
+    }
+
+    .carrito-boton,
+    .carritovacio-boton {
+        padding: .8rem;
+        width: 160px;
+    }
+
+  }

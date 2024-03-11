@@ -85,3 +85,23 @@
 .navegador-enlace-abajo:hover {
     color: rgba(0, 0, 0, 0.40);
 }
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .navegador-seccion {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .navegador-seccion {
+        display: none;
+    }
+
+}
+

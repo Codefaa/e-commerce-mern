@@ -41,9 +41,10 @@ function ArtefactoDetalle() {
         <section className='artefactodetalle-seccion'>
 
             <div className="artefactodetalle-contenedor" key={artefacto._id}>
+                
+                <p className='artefactodetalle-titulo'>Home/ All Artefacts/ {artefacto.categoria}</p>
 
                 <div className="artefactodetalle-izquierda">
-                    <p className='artefactodetalle-titulo'>Home/ All Artefacts/ {artefacto.categoria}</p>
                     <h1 className='artefactodetalle-nombre'>{artefacto.nombre}</h1>
                     <span className='artefactodetalle-color'>Color: {artefacto.color}</span>
                     <span className='artefactodetalle-precio'>${artefacto.precio}</span>

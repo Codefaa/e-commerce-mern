@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 10;
+    z-index: 110;
 }
 
 .encabezado-parrafo {

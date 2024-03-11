@@ -38,9 +38,9 @@ function Carrito() {
                                 <figure className='carrito-imagendatos'>
                                     <img className='carrito-imagen' src={artefacto.imagen} alt={artefacto.nombre} />
                                     <div className='carrito-datos'>
-                                        <h4>{artefacto.nombre}</h4>
-                                        <span>${artefacto.precio}</span>
-                                        <span>${artefacto.precio * artefacto.cantidad} ({artefacto.cantidad} x {artefacto.precio})</span>
+                                        <h4 className='carrito-nombre'>{artefacto.nombre}</h4>
+                                        <span className='carrito-precio'>${artefacto.precio}</span>
+                                        <span className='carrito-preciototal'>${artefacto.precio * artefacto.cantidad} ({artefacto.cantidad} x {artefacto.precio})</span>
                                     </div>
                                 </figure>
                                 <span className='span-cantidad'>Cantidad: {artefacto.cantidad}</span>  

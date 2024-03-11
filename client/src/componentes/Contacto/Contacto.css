@@ -1,6 +1,6 @@
 .contacto-seccion {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     width: 60%;
     margin: 10vw auto;
     display: flex;
@@ -73,3 +73,20 @@
     background-color: rgba(200, 200, 200, 0.466);
     color: black;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .contacto-seccion {
+        grid-column: 1/3;
+    }
+
+  }
+  
+  @media (max-width: 767px) {
+  
+    .contacto-seccion {
+        grid-column: 1/3;
+    }
+  
+  }
+  

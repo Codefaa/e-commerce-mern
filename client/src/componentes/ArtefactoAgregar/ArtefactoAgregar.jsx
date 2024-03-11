@@ -74,7 +74,7 @@ function ArtefactoAgregar( { estadoModal, setEstadoModal, artefactoSeleccionado,
                 <button className='agregar-boton' type='submit'>Agregar Artefacto<i class="bi bi-person-fill-add"></i></button>
                 }
                 
-                <button className='cerrar-boton' onClick={() => { setEstadoModal(false); setArtefactoSeleccionado && setArtefactoSeleccionado(null); }}><i class="bi bi-x-lg"></i></button>
+                <button className='cerrar-boton' onClick={() => { setEstadoModal(false); setArtefactoSeleccionado && setArtefactoSeleccionado(null); }}><i class="bi bi-x-lg icono-cerrar"></i></button>
  
             </form>
 

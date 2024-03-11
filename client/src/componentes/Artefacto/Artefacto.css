@@ -16,7 +16,7 @@
 }
 
 .imagen-artefacto {    
-    height: 356px;
+    height: 100%;
     transition: all 500ms ease-out;
 }
 
@@ -68,3 +68,28 @@
     color: black;
     font-size: 1.2rem;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .artefacto-figure {
+        height: 220px;
+        
+    }
+
+  }
+  
+  @media (max-width: 767px) {
+  
+    .artefacto-figure {
+        height: 220px;
+    }
+
+    .titulo-artefacto,
+    .precio-artefacto,
+    .bi-trash3-fill,
+    .bi-pencil-square {
+        font-size: .9rem;
+    }
+  
+  }
+  

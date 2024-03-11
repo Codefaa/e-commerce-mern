@@ -23,6 +23,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+
 }
 
 .agregar-formulario {
@@ -34,7 +35,6 @@
 .agregar-separar {
     display: flex;
     gap: 20px;
-
     margin-top: 40px;    
 }
 
@@ -98,9 +98,38 @@
     background: #f2f2f2;
 }
 
-.bi-x-lg {
+.icono-cerrar {
     width: 100%;
     height: 100%;
     font-weight: bold;
     font-size: 1.3rem;
 }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .agregar-contenedor {
+        width: 700px;
+    }
+
+  }
+  
+  @media (max-width: 767px) {
+  
+    .agregar-seccion {
+        
+    }
+
+    .agregar-contenedor {
+        width: 390px;
+    }
+
+    .agregar-input,
+    .agregar-textarea,
+    .agregar-select {
+        width: 168px;
+    }
+
+
+  
+  }

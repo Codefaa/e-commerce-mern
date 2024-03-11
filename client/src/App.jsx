@@ -13,6 +13,7 @@ import Coleccion from './componentes/Coleccion/Coleccion';
 import ArtefactoAgregar from './componentes/ArtefactoAgregar/ArtefactoAgregar';
 import Carrito from './componentes/Carrito/Carrito';
 import { CartProvider } from './context/CartContext';
+import NavegadorMenu from './componentes/NavegadorMenu/NavegadorMenu';
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
           
           <Encabezado />
           <Navegador />
-
+          <NavegadorMenu />
+          
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/sobre' element={<Sobre />}/>
