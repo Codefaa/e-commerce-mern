@@ -13,22 +13,22 @@ function ArtefactoLista() {
     const [estadoModal, setEstadoModal] = useState(false);
 
     useEffect(() => {
+        let promise;
+    
         if (categoria_artefacto) {
-            leerCategoriaArtefacto(categoria_artefacto)
-                .then(response => setArtefactos(response.data))
-                .catch(error => console.error(error))
-                .finally(() => setLoading(false));
+            promise = leerCategoriaArtefacto(categoria_artefacto);
         } else if (nombre_artefacto) {
-            leerNombreArtefacto(nombre_artefacto)
-                .then(response => setArtefactos(response.data))
-                .catch(error => console.error(error));
+            promise = leerNombreArtefacto(nombre_artefacto);
         } else {
-            leerArtefacto()
-                .then(response => setArtefactos(response.data))
-                .catch(error => console.error(error));
+            promise = leerArtefacto();
         }
+    
+        promise.then(response => setArtefactos(response.data))
+               .catch(error => console.error(error))
+               .finally(() => setLoading(false));
+    
     }, [categoria_artefacto, nombre_artefacto]);
-
+    
 
 
     return(

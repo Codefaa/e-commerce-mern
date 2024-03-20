@@ -17,7 +17,7 @@ async function leerArtefactos(req, res) {
 
     const artefactos = await ArtefactoModel
         .find()
-        .sort({ "categoria": 1 }) // Orden ascendente por categoría
+        .sort({ "categoria": 1 }) 
         .then((allArtefactos) => {
             allArtefactos.sort((a, b) => {
                 return ordenCategorias[a.categoria] - ordenCategorias[b.categoria];
