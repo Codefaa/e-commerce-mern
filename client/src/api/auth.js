@@ -4,6 +4,8 @@ const URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
 
 const API = `${URL}/api`;
 
+console.log(URL);
+
 export const leerArtefacto = () => axios.get(`${API}/artefactos`)
 
 export const leerCategoriaArtefacto = categoria => axios.get(`${API}/artefactos/categoria/${categoria}`)
